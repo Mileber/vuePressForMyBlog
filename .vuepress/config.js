@@ -16,7 +16,7 @@ module.exports = {
         { text: 'B站空间', link: 'https://space.bilibili.com/3721275/#/' },
         { text: 'Minecraft私有服务器', link: '/game/MCserver.md' },
         { text: '私有云盘', link: '' },
-        { text: '联系狐狸', link: 'link.md' }
+        { text: '联系狐狸', link: './../link.md' }
       ],
       repo: 'https://github.com/Mileber/Mileber.github.io'
     }
