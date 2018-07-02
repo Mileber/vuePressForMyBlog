@@ -2,50 +2,36 @@
   <div class="article-card clearfix">
     <a class="cover-wrp" target="_blank" :href="link">
       <img :src="imgUrl">
-      <div class="duration">{{duration}}</div>
     </a>
     <div class="meta-wrp">
       <div class="meta-title">
-        <span class="typename">{{tag}}</span>
         <a class="name ellipsis" target="_blank" :href="link">{{title}}</a>
-      </div>
-      <div class="meta-status">
-        <span class="pubdate">{{pubdate}}</span>
       </div>
     </div>
   </div>
 </template>
-<style scoped>
-.cover-wrp {
-  position: relative;
-  float: left;
-  width: 160px;
-  height: 100px;
-  border-radius: 4px;
-  overflow: hidden;
-  margin-right: 20px;
-  background: #f1f3f7;
+<script>
+export default {
+  data () {
+    return {
+
+    }
+  },
+  props: ['imgUrl', 'link', 'title']
 }
+</script>
+<style scoped>
 .article-card {
   position: relative;
-  min-height: 100px;
+  height: 150px;
   border-radius: 4px;
   background: #fff;
   box-shadow: 0.5px 1px 1px 2px #dfe5ed;
   margin: 20px;
   padding: 20px;
-}
-.duration {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  height: 20px;
-  line-height: 20px;
-  padding: 0 4px;
-  background: rgba(0,0,0,.6);
-  color: #fff;
-  border-radius: 4px;
-  font-size: 12px;
+  display: inline-block;
+  vertical-align: top;
+  width: 165px;
 }
 .meta-wrp {
   float: left;
@@ -93,13 +79,3 @@
   color: #ffc3ce;
 }
 </style>
-<script>
-export default {
-  data () {
-    return {
-
-    }
-  },
-  props: ['imgUrl', 'duration', 'title', 'tag', 'pubdate', 'link']
-}
-</script>

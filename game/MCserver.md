@@ -14,7 +14,7 @@ sidebarDepth: 2
 
 ## 往期服务器相关视频
 
-<VideoLink v-for="video in videos" :imgUrl="video.imgStr" :duration="video.duration" :tag="video.tag" :title="video.title" :pubdate="video.pubdate"/>
+<VideoLink v-for="video in videos" :link="video.link" :imgUrl="video.imgStr" :duration="video.duration" :tag="video.tag" :title="video.title" :pubdate="video.pubdate"/>
 <script>
   export default {
     data () {
@@ -25,14 +25,16 @@ sidebarDepth: 2
             duration: '47:29',
             tag: '单机联机',
             title: '【服务器完结】狐狸的大澡堂子开张啦',
-            pubdate: '18-01-15 21:42:45'
+            pubdate: '18-01-15 21:42:45',
+            link: 'https://www.bilibili.com/video/av18348303/',
           },
           {
             imgStr: '/assets/img/server_2.2c124e61.jpg',
             duration: '55:32',
             tag: '单机联机',
             title: '【服务器番外】地球是方的？狐狸和小伙伴去...',
-            pubdate: '18-01-21 22:19:31'
+            pubdate: '18-01-21 22:19:31',
+            link: 'https://www.bilibili.com/video/av18572266/'
           }
         ]
         
